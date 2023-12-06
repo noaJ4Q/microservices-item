@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 import java.util.List;
 
-@FeignClient(name = "microservices-product", url = "localhost:8001")
+@FeignClient(name = "microservice-product", url = "localhost:8001")
 public interface ProductRestFeign {
 
     @GetMapping("/products")
